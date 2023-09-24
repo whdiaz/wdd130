@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
+:root {
+  --primary-color: #669bbc;
+  --secondary-color: #003049;
+  --accent1-color: #fdf0d5;
+  --accent2-color: #c1121f;
+
+  --heading-font: "Croissant One", cursive, serif;
+  --paragraph-font: "Mooli", sans-serif, serif;
+
+  --nav-background-color: #c1121f;
+  --nav-link-color: #fdf0d5;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #ccd3ff;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent2-color);
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:hover,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(var(--nav-hover-background-color));
+}
