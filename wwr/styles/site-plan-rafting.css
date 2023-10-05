@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
 :root {
   --primary-color: #669bbc;
   --secondary-color: #003049;
@@ -13,6 +12,7 @@
   --nav-hover-link-color: #000000;
   --nav-hover-background-color: #ccd3ff;
 }
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
 
 body {
   font-family: var(--paragraph-font);
@@ -21,7 +21,12 @@ body {
   background-color: var(--primary-color);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--accent1-color);
 }
@@ -55,5 +60,5 @@ nav a:visited {
 
 nav a:hover {
   color: var(--nav-hover-link-color);
-  background-color: var(var(--nav-hover-background-color));
+  background-color: var(--nav-hover-background-color);
 }
