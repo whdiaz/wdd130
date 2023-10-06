@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
+
+:root {
+  --primary-color: #669bbc;
+  --secondary-color: #003049;
+  --accent1-color: #001aff;
+  --accent2-color: #ffffff;
+
+  --heading-font: "Croissant One", cursive, serif;
+  --paragraph-font: "Mooli", sans-serif, serif;
+
+  --nav-background-color: #c1121f;
+  --nav-link-color: #fdf0d5;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #ccd3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  left: 100px;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--accent1-color);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+}
+
+article {
+  background-color: var(--accent2-color);
+  opacity: 0.9;
+  position: absolute;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: auto;
+  background-color: #003049;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.hero article {
+  position: absolute;
+  top: 30%;
+  width: 50%;
+  height: auto;
+  left: 20%;
+}
+
+.hero article img {
+  float: right;
+  width: 200px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
