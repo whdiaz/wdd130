@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
 
 :root {
-  --primary-color: #669bbc;
+  --primary-color: #0400ff;
   --secondary-color: #003049;
   --accent1-color: #001aff;
   --accent2-color: #ffffff;
@@ -22,38 +22,70 @@
 }
 
 header {
-  display: flex;
+  display: grid;
+  padding: 20px;
+  background-color: var(--accent1-color);
   align-items: center;
+  justify-items: center;
+}
+
+header img {
+  grid-column: 1/2;
 }
 
 nav {
-  position: relative;
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: grid;
+  max-height: 4rem;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 nav a {
+  display: block;
+  color: var(--nav-link-color);
   text-decoration: none;
-  position: relative;
-  left: 100px;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+body {
+  font-family: var(--paragraph-font);
+  width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--accent1-color);
-}
-
-h1 {
-  font-family: var(--heading-font);
-  color: var(--accent2-color);
-}
-
-article {
-  background-color: var(--accent2-color);
-  opacity: 0.9;
-  position: absolute;
+  padding: 15px;
 }
 
 .hero {
   position: relative;
+  max-width: 1200px;
+  margin-top: 1rem;
 }
 
 .hero img {
@@ -62,35 +94,193 @@ article {
   height: auto;
 }
 
-.hero h1 {
-  text-align: center;
+.hero article {
+  display: block;
+  margin: 0 auto;
   position: absolute;
-  top: 20%;
-  left: auto;
-  background-color: #003049;
-  width: 100%;
-  height: auto;
-  opacity: 0.8;
+  top: 65px;
+  left: 0;
+  right: 0;
+  width: 800px;
+  background-color: #c6dfff90;
 }
 
-.hero article {
+.hero article p {
+  color: black;
+  text-shadow: 0 0 1px #7d4a3b;
+}
+
+.hero h1 {
+  display: block;
   position: absolute;
-  top: 30%;
-  width: 50%;
-  height: auto;
-  left: 20%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  font-size: 3rem;
+  text-shadow: 0 0 4px #00000090;
+  background-color: #ffffff99;
 }
 
 .hero article img {
   float: right;
-  width: 200px;
+  width: 150px;
+  margin: 35px 20px auto 20px;
 }
 
-footer a {
-  text-decoration: none;
+.history {
+  position: relative;
+  display: grid;
+  max-width: 1200px;
+}
+
+.history img {
+  position: relative;
+  margin-top: 3rem;
+  max-height: 200px;
+  display: grid;
+  grid-row: 2/3;
+  margin-top: 0;
+}
+
+.history p {
+  position: relative;
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.adventure {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  max-width: 1200px;
+}
+
+.adventure h2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.adventure img {
+  max-width: 175px;
+  height: auto;
+  display: grid;
+  grid-row: 2/3;
+}
+
+.adventure figure {
+  max-width: 175px;
+  height: auto;
+  display: grid;
+  grid-row: 2/3;
+  margin: 0;
+}
+
+.adventure figcaption {
+  display: grid;
+  grid-row: 3/3;
+  text-align: center;
+}
+
+.employees {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 1200px;
+}
+
+.employees h2 {
+  justify-self: left;
+}
+
+.employees img {
+  max-width: 175px;
+  height: auto;
+  display: grid;
+  grid-row: 2/3;
+}
+
+.employees figure {
+  max-width: 175px;
+  height: auto;
+  display: grid;
+  grid-row: 2/3;
+  margin: 0;
+}
+
+.employees figcaption {
+  display: grid;
+  grid-row: 3/3;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  background-color: #d4dcff;
+  max-width: 400px;
+  display: grid;
+  justify-self: right;
+  margin: 2rem;
+  padding: 1rem;
+  border: 2px solid #002fff;
+}
+
+fieldset {
+  max-width: 400px;
+  display: grid;
+}
+
+.radio {
+  position: relative;
+  display: flex;
+  justify-self: right;
+}
+
+.checkbox {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-self: left;
+}
+
+button {
+  color: blue;
+  background-color: whitesmoke;
+  margin: 1rem;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 3px;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #002fff;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin-right: 4rem;
 }
 
 footer img {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  margin-top: 1rem;
 }
