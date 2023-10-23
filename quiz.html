@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 130 | HTML and CSS Quiz Form</title>
-    <meta name="description" content="Quiz Page" />
+
+    <title>Willian Diaz | Quiz page</title>
+    <meta
+      name="description"
+      content="Web page pilot to learn HTML called quiz page, the course is to i learn about HTMl structure, the purpose is become a web Designer"
+    />
     <meta name="author" content="Willian Diaz" />
-    <link rel="stylesheet" href="styles/quiz.css" />
+    <link rel="stylesheet" type="text/css" href="styles/quiz.css" />
   </head>
   <body>
-    <h1>HTML and CSS Quiz</h1>
-    <form action="#" method="post">
-      <label for="q1">1. What does the acronym CSS stand for? </label>
-      <input type="text" id="q1" name="q1" />
+    <form id="quiz-form">
+      <h1>Online Quiz</h1>
 
-      <label for="q2"
-        >2. How are the id and class attributes selected in CSS?</label
+      <!-- Question 1: Fill in the blank -->
+      <label for="q1">1. What does HTML stand for?</label>
+      <input type="text" id="q1" name="q1" placeholder="Your answer" required />
+
+      <!-- Question 2: Short answer -->
+      <label for="q2">2. Explain the purpose of CSS in web development:</label>
+      <textarea id="q2" name="q2" rows="4" required></textarea>
+
+      <!-- Question 3: Dropdown -->
+      <label for="q3"
+        >3. What is the correct file extension for a Cascading Style Sheet (CSS)
+        file?</label
       >
-      <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
-
-      <label for="q3">3. Which of the following is a CSS comment ?</label>
-      <select id="q3" name="q3">
+      <select id="q3" name="q3" required>
         <option value="" selected disabled>Choose One ...</option>
-        <option value="/*Adjust this margin */">any thing 1</option>
-        <option value="div">any thing 2</option>
-        <option value="span">any thing 3</option>
+        <option value=".css">.css</option>
+        <option value=".html">.html</option>
+        <option value=".js">.js</option>
       </select>
-      <label for="q4"
-        >4. What is the botton margin given this declaration?</label
-      >
-      <input type="number" id="q4" name="q4" />
-      <div class="boxed-text">margin: 10px 5px 15px;</div>
+
+      <!-- Question 4: Integer answer -->
+      <label for="q4">4. How many heading levels are available in HTML?</label>
+      <input type="number" id="q4" name="q4" min="1" required />
+
       <button type="submit">Submit Quiz</button>
     </form>
   </body>
