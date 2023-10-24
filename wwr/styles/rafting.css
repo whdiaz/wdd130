@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,300&family=Mooli&family=Poppins&display=swap");
-
 :root {
   --primary-color: #44a8ff;
   --secondary-color: #003049;
@@ -21,6 +20,7 @@
   box-sizing: border-box;
   filter: drop-shadow(0 0 0.95rem rgb(224, 225, 255));
 }
+
 body {
   background-color: #dfe8ff;
 }
@@ -90,17 +90,10 @@ header,
 footer,
 .grid,
 .maingrid {
-  max-width: auto;
+  max-width: none;
   margin: 0 auto;
   border-bottom: 1px #b1b592 solid;
   border-top: 1px #b1b592 solid;
-}
-
-.hero {
-  position: relative;
-  max-width: 1200px;
-  margin-top: 1rem;
-  align-items: center;
 }
 
 .hero img {
